@@ -98,8 +98,16 @@ body {
   align-self: center;
   top: 34vh;
   right: 37vw;
+  display: none;
 }
 
+.home-column2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
 
 
 
