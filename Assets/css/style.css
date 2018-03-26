@@ -1,3 +1,18 @@
+  @font-face {
+    font-family: SkyhookMonoBold;
+    src: url("../fonts/SkyhookMono_bold.ttf");
+}
+
+@font-face {
+    font-family: SkyhookMonoRegular;
+    src: url("../fonts/SkyhookMono_regular.ttf");
+}
+
+@font-face {
+    font-family: Introdução;
+    src: url("../fonts/Fontfabric-Intro-Black-Caps.otf");
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -26,6 +41,7 @@ body {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-start;
+	z-index: 4;
 }  
 
 .header-img {
@@ -75,38 +91,53 @@ body {
 }
 
 .home .container {
-/*	background-color: rgb(247, 247, 247);
-	background-size: 50vw;
-	background-position: right;*/
+	background-image: url("../img/Vista-Aerea.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	flex-direction: row;
+	justify-content: flex-end;
   margin: 0;
   padding: 0;
 }
 
-.home-column1 {
-	background-image: url("../img/Vista-Aerea.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 50%;
-	display: flex;
-  flex-direction: column;
-}
-
-.home-img {
-	width: 420px;
-  position: absolute;
-  align-self: center;
-  top: 34vh;
-  right: 37vw;
-  display: none;
-}
-
-.home-column2 {
+.home-column {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: rgb(247, 247, 247);
 	width: 50%;
+	position: relative;
+}
+
+.home-img {
+  width: 420px;
+  position: absolute;
+  align-self: center;
+  top: 34vh;
+  right: 34vw
+}
+
+.home-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%
+}
+
+.home-title {
+	font-family: Introdução;
+	font-size: 7.9375rem;
+	color: rgb(255, 0, 112);
+	text-align: left;
+	margin: 0;
+}
+
+.home-text {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.25rem;
 }
 
 
