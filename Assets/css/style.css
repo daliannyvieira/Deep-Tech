@@ -1,3 +1,162 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+   /*  Header  */
+
+.header 	.container{
+	position: fixed;
+	width: 100vw;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+}  
+
+.header-img {
+	width: 360px;
+  position: fixed;
+  align-self: center;
+  top: 20px;
+}
+
+.menu-list {
+	display: flex;
+	justify-content: space-around;
+	width: 30vw;
+	position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+.menu-list a {
+	text-decoration: none;
+}
+
+.menu-item {
+	list-style: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: rgb(0,0,0);
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.header-social {
+  position: fixed;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon {
+	width: 30px;
+}
+
+
+  /*  Home  */
+
+.home {
+
+}
+
+.home .container {
+/*	background-color: rgb(247, 247, 247);
+	background-size: 50vw;
+	background-position: right;*/
+	flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.home-column1 {
+	background-image: url("../img/Vista-Aerea.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50%;
+	display: flex;
+  flex-direction: column;
+}
+
+.home-img {
+	width: 420px;
+  position: absolute;
+  align-self: center;
+  top: 34vh;
+  right: 37vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 img {
 	width: 50px;
 }
