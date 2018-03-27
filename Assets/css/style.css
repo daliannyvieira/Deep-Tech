@@ -245,7 +245,6 @@ body {
   position: relative;
   margin-top: 100px;
   padding-top: 100px;
-  max-width: 100vw;
 
 }
 
@@ -259,17 +258,46 @@ body {
 
 .services-column1,
 .services-column2 {
-  width: 50vw;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .services-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
+  line-height: 32px;
   align-self: center;
+  width: 70%;
+  font-weight: 600;
 }
 
 .services-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
 
+.services-box-subtitle {
+  font-family: Introdução;
+  font-size: 2rem;
+  line-height: 32px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.services-box-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
+  line-height: 32px;
 }
 
 .services-box-img {
   width: 400px;
+}
+
+.box-startuin {
+  
 }
