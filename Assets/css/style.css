@@ -45,7 +45,6 @@ body {
   display: flex;
   z-index: 4;
   min-width: 90vw;
-  min-height: 100vh;
   position: relative;
 }
 
@@ -78,9 +77,9 @@ body {
 }
 
 .header-social {
-  position: absolute;
-  right: 15px;
-  bottom: 10px;
+  position: fixed;
+  right: 0px;
+  top: 70vh;
   display: flex;
   flex-direction: column;
 }
@@ -240,12 +239,10 @@ body {
 /*  Services    */
 .services .container {
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-top: 100px;
-  padding-top: 100px;
-  min-height: 100vh;
+  padding: 100px 0 0 0;
 }
 
 .services-span {
@@ -258,7 +255,7 @@ body {
 
 .services-column1,
 .services-column2 {
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-direction: column;
 }
@@ -279,7 +276,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50vh;
+  margin-top: 100px;
 }
 
 .services-box span {
@@ -309,7 +306,7 @@ body {
 }
 
 .box-startupin {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .box-startupin span {
@@ -400,6 +397,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  align-items: flex-start;
   margin-top: 100px;
   width: 100%
 }
@@ -421,7 +419,12 @@ body {
   position: relative;
 }
 
-.contact-development-link {
+.contact-development {
+  display: flex;
+  justify-content: space-around;
   font-family: SkyhookMonoBold;
+  font-size: .75rem;
+  padding: 10px;
+  background-color: tomato;
 
 }
