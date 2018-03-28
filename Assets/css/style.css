@@ -64,7 +64,7 @@ body {
 .header-img {
   width: 360px;
   position: absolute;
-  top: 10px;
+  top: 20px;
 }
   
 @media (max-width: 768px) {
@@ -89,7 +89,7 @@ body {
   display: flex;
   justify-content: space-around;
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 15px;
 }
 
@@ -113,11 +113,13 @@ body {
 }
 
 .header-social {
-  position: fixed;
-  right: 20px;
-  top: 70vh;
   display: flex;
   flex-direction: column;
+  height: 170px;
+  justify-content: space-between;
+  position: fixed;
+  right: 20px;
+  top: 65vh;
 }
 
 @media (max-width: 768px) {
@@ -242,7 +244,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.125rem;
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
   left: 14vw;
 }
 
@@ -626,7 +628,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin-left: -80px;
+  margin-left: -70px;
 }
 
 @media (max-width: 768px) {
