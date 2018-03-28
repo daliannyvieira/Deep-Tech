@@ -379,6 +379,13 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .services-column1,
+  .services-column2 {
+    width: 100%
+  }
+}
+
 .services-text {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.25rem;
@@ -428,7 +435,7 @@ body {
   margin-top: 150px;
 }
 
-.box-startupin span {
+.box-startupin-subtitle {
   align-self: flex-end;
   margin-right: 50px;
 } 
@@ -452,7 +459,7 @@ body {
   align-items: flex-start;
 }
 
-.box-bios span {
+.box-bios-subtitle {
   margin-left: 10px;
 }
 
@@ -460,7 +467,7 @@ body {
   margin-left: 20px;
 }
 
-.box-cloud span {
+.box-cloud-subtitle {
   margin-left: 10px;
 }
 
@@ -470,6 +477,33 @@ body {
 
 .box-cloud-img {
   align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .box-startupin-subtitle,
+  .box-social-subtitle,
+  .box-bios-subtitle,
+  .box-cloud-subtitle {
+    align-self: center;
+  }
+
+  .box-startupin-text,
+  .box-social-text,
+  .box-bios-text,
+  .box-cloud-text {
+    margin: 0;
+    align-self: center;
+    width: 260px;
+  }
+
+
+  .box-startupin-img,
+  .box-social-img,
+  .box-bios-img,
+  .box-cloud-img {
+    width: 100%
+  }
+
 }
 
 /*  Contact  */
@@ -514,7 +548,7 @@ body {
   }
 
   .contact-box {
-    align-self: center;
+    margin: 0 auto;
   }
 
   .contact-description {
@@ -557,15 +591,17 @@ body {
 .contact-social {
   display: flex;
   flex-flow: row nowrap;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 100px;
 }
 
 @media (max-width: 768px) {
   .contact-social{
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row wrap;
     width: 330px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -578,7 +614,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
-  padding: 15px;
   color: rgb(0, 0, 0);
   box-shadow: 10px 0 0 0 rgb(255, 221, 0), -10px 0 0 0 rgb(255, 221, 0);
   background: rgb(255, 221, 0);
@@ -602,7 +637,7 @@ body {
   font-size: .75rem;
   box-shadow: 10px 0 0 0 white, -10px 0 0 0 white;
   background-color: white;
-  padding: 10px;
+  padding: 5px 0;
 }
 
 .contact-development a {
@@ -611,7 +646,6 @@ body {
 
 @media (max-width: 768px) {
   .contact-development {
-    margin-top: 20px;
-    align-self: flex-start;
+    margin: 20px auto 0 auto;
   }
 }
