@@ -516,7 +516,7 @@ body {
   margin-top: 2rem;
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(255, 221, 0);
+ /* background-color: rgb(255, 221, 0);*/
 }
 
 /*.contact canvas {
@@ -542,6 +542,10 @@ body {
   z-index: 2;
 }
 
+.contact-box {
+  position: relative;
+}
+
 @media (max-width: 768px) {
   .contact .container {
     height: 110vh;
@@ -557,15 +561,14 @@ body {
 }
 
 .contact-description-text {
-  font-family: 'Source Sans Pro', sans-serif;  
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.125rem;
-  line-height: 46px;
+  line-height: 56px;
   font-weight: 900;
   color: rgb(256, 256, 256);
-  box-shadow: 15px 0 0 0 #000, -15px 0 0 0 #000;
+  box-shadow: 10px 0px 0px 4px #000, -10px 0px 0px 4px #000;
   background: #000;
   display: inline;
-  position: relative;
 }
 
 .contact-address {
@@ -576,16 +579,15 @@ body {
 }
 
 .contact-address-text {
-  font-family: 'Source Sans Pro', sans-serif;  
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5rem;
-  line-height: 46px;
+  line-height: 56px;
   font-weight: 900;
   color: rgb(256, 256, 256);
-  box-shadow: 15px 0 0 0 #000, -15px 0 0 0 #000;
+  box-shadow: 10px 0px 0px 0px #000, -10px 0px 0px 0px #000;
   background: #000;
   display: inline;
-  position: relative;
-  margin: 2px 0;
+  margin: 5px 0;
 }
 
 .contact-social {
@@ -615,10 +617,9 @@ body {
   font-size: 1.5rem;
   font-weight: 900;
   color: rgb(0, 0, 0);
-  box-shadow: 10px 0 0 0 rgb(255, 221, 0), -10px 0 0 0 rgb(255, 221, 0);
+  box-shadow: 0px 0px 0px 10px rgb(255, 221, 0);
   background: rgb(255, 221, 0);
   display: inline;
-  position: relative;
 }
 
 @media (max-width: 768px) {
