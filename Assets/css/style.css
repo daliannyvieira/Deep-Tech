@@ -21,7 +21,6 @@ body {
 }*/
 
 .container {
-  border: 2px solid green;
   max-width: 1400px;
   margin: 0 auto;
   padding: 40px;
@@ -231,16 +230,18 @@ body {
   position: relative;
 }
 
-.eita {
+.belief-intro {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  min-height: 100vh;
 }
 
-.eita canvas {
+.belief-intro canvas {
   width: 50vw;
   height: 40vw;
+  position: relative;
+
 }
 
 .belief-span {
@@ -258,7 +259,7 @@ body {
   text-align: center;
   width: 35%;
   position: absolute;
-  top: 20%;
+  top: 25%;
 }
 
 @media (max-width: 720px) {
