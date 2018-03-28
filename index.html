@@ -18,9 +18,14 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="Assets/css/style.css">
   <link rel="stylesheet" href="Assets/css/fonts.css">
-  <link rel="stylesheet" href="Assets/css/glitch.css" />
+  <link rel="stylesheet" href="Assets/css/glitch.css">
+  <link rel="stylesheet" href="Assets/css/belief.css">
 </head>
+
+
+
 <body class="demo-2 render">
+
   <header class="header">
     <section class="header-container">
       <img src="Assets/img/1STi-Transformacao.svg" alt="Logo 1STi" class="header-img">
@@ -78,7 +83,10 @@
     <section class="belief" id="belief">
       <div class="container">
         <span class="belief-span">—<br>belief</span>
-        <h2 class="belief-title">Shaping our future for better</h2>
+        <div class="eita">
+          <canvas class="scene scene--full" id="scene"></canvas>
+          <h2 class="belief-title">Shaping our future for better</h2>
+        </div>
         <div class="belief-description">
           <p class="belief-text">In a time marked by the greatest environmental, economic and social challenges of our history, the surface is not the place.</p>
           <p class="belief-text">We must dive deep in order to find the strength that allows us to create intentional and urgent trajectories that generate the necessary conditions for a new way of evolving to organizations, markets and society.</p>
@@ -172,5 +180,9 @@
   </footer>
   <script src="Assets/js/imagesloaded.pkgd.min.js"></script>
   <script src="Assets/js/glitch.js"></script>
+  <script src="Assets/js/three.min.js"></script>
+  <script src="Assets/js/perlin.js"></script>
+  <script src="Assets/js/TweenMax.min.js"></script>
+  <script src="Assets/js/belief.js"></script>
 </body>
 </html>
