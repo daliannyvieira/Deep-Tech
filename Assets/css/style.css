@@ -73,6 +73,18 @@ body {
   }
 }
 
+.menu-icon-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-icon-mobile {
+    display: block;
+    width: 26px;
+    margin: 15px 10px;
+  }
+}
+
 .menu-list {
   display: flex;
   justify-content: space-around;
@@ -80,6 +92,12 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+@media (max-width: 768px) {
+  .menu-list {
+    display: none;
+  }
 }
 
 .menu-list a {
@@ -262,13 +280,19 @@ body {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .belief-intro {
+    min-height: 50vh
+  }
+}
+
 .belief-title {
   font-family: Introdução;
   font-size: 4.375rem;
   text-align: center;
   width: 35%;
   position: absolute;
-  top: 25%;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
@@ -301,7 +325,7 @@ body {
 @media (max-width: 768px) {
   .belief-text {
     font-size: 1.06rem;
-    width: 92%;
+    width: 100%;
   }
 }
 
@@ -561,6 +585,12 @@ body {
   }
 }
 
+@media (max-width: 425px) {
+  .contact-box {
+    width: 100%;
+  }
+}
+
 .contact-description-text {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.125rem;
@@ -609,6 +639,11 @@ body {
   }
 }
 
+@media (max-width: 425px) {
+    .contact-social{
+    width: 300px;
+}
+
 .contact-social a {
   color: black;
   margin-right: 30px;
@@ -650,5 +685,11 @@ body {
 @media (max-width: 768px) {
   .contact-development {
     margin: 20px auto 0 auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .contact-development {
+    margin: 20px auto 0 0;
   }
 }
