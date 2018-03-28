@@ -18,8 +18,14 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="Assets/css/style.css">
   <link rel="stylesheet" href="Assets/css/fonts.css">
+  <link rel="stylesheet" href="Assets/css/glitch.css">
+  <link rel="stylesheet" href="Assets/css/belief.css">
 </head>
-<body>
+
+
+
+<body class="demo-2 render">
+
   <header class="header">
     <section class="header-container">
       <img src="Assets/img/1STi-Transformacao.svg" alt="Logo 1STi" class="header-img">
@@ -54,22 +60,33 @@
   </header>
   <main>
     <section class="home" id="home">
-        <div class="home-column">
-          <div class="home-center">
-            <img src="Assets/img/Borboleta.png" class="home-img">
-          </div>
-          <div class="home-description">
-            <h1 class="home-title">Deep<br>Tech</h1>
-            <p class="home-text">A significant driving force<br>for the future innovation economy.</p>
-            <span class="home-span">↓</span>
-          </div>
+      <div class="home-column">
+        <div class="home-center">
+          <img src="Assets/img/Borboleta.png" class="home-img">
+        </div>
+        <div class="home-description">
+          <h1 class="home-title">Deep<br>Tech</h1>
+          <p class="home-text">A significant driving force<br>for the future innovation economy.</p>
+          <span class="home-span">↓</span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="glitch">
+          <div class="glitch__img"></div>
+          <div class="glitch__img"></div>
+          <div class="glitch__img"></div>
+          <div class="glitch__img"></div>
+          <div class="glitch__img"></div>
         </div>
       </div>
     </section>
     <section class="belief" id="belief">
       <div class="container">
         <span class="belief-span">—<br>belief</span>
-        <h2 class="belief-title">Shaping our future for better</h2>
+        <div class="belief-intro">
+          <canvas class="scene scene--full" id="scene"></canvas>
+          <h2 class="belief-title">Shaping our future for better</h2>
+        </div>
         <div class="belief-description">
           <p class="belief-text">In a time marked by the greatest environmental, economic and social challenges of our history, the surface is not the place.</p>
           <p class="belief-text">We must dive deep in order to find the strength that allows us to create intentional and urgent trajectories that generate the necessary conditions for a new way of evolving to organizations, markets and society.</p>
@@ -161,5 +178,11 @@
       </div>
     </section>
   </footer>
+  <script src="Assets/js/imagesloaded.pkgd.min.js"></script>
+  <script src="Assets/js/glitch.js"></script>
+  <script src="Assets/js/three.min.js"></script>
+  <script src="Assets/js/perlin.js"></script>
+  <script src="Assets/js/TweenMax.min.js"></script>
+  <script src="Assets/js/belief.js"></script>
 </body>
 </html>

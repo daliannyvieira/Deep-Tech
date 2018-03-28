@@ -21,7 +21,6 @@ body {
 }*/
 
 .container {
-  border: 2px solid green;
   max-width: 1400px;
   margin: 0 auto;
   padding: 40px;
@@ -35,7 +34,7 @@ body {
 .header {
   position: fixed;
   z-index: 1;
-  display: flex;
+  display: flex;''
   align-items: center;
   justify-content: center;
   width: 100vw;
@@ -43,9 +42,9 @@ body {
 
 .header-container {
   display: flex;
-  z-index: 4;
   min-width: 90vw;
   position: relative;
+  z-index: 35;
 }
 
 @media (max-width: 720px) {
@@ -231,6 +230,20 @@ body {
   position: relative;
 }
 
+.belief-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.belief-intro canvas {
+  width: 50vw;
+  height: 40vw;
+  position: relative;
+
+}
+
 .belief-span {
   font-family: SkyhookMonoRegular;
   font-size: 1rem;
@@ -245,7 +258,8 @@ body {
   font-size: 4.375rem;
   text-align: center;
   width: 35%;
-  height: 70vh;
+  position: absolute;
+  top: 25%;
 }
 
 @media (max-width: 720px) {
@@ -443,11 +457,40 @@ body {
 }
 
 /*  Contact  */
+
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(255, 221, 0);
+}
+
+/*.contact canvas {
+  width: 100vw;
+  height: 100vh;
+}
+*/
+/*.contact::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 221, 0);
+  opacity: 0.8;
+}*/
 .contact .container {
+  position: absolute;
+  top: 0;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  z-index: 2;
 }
 
 .contact-description-text {
