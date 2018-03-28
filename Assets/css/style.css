@@ -540,7 +540,7 @@ body {
   margin-top: 2rem;
   width: 100%;
   min-height: 100vh;
- /* background-color: rgb(255, 221, 0);*/
+ background-image: url("../img/contato-ruido.gif");
 }
 
 /*.contact canvas {
@@ -559,7 +559,7 @@ body {
 }*/
 
 .contact .container {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -568,12 +568,13 @@ body {
 
 .contact-box {
   position: relative;
-  width: 50%
+  width: 50%;
+  padding-top: 50px;
 }
 
 @media (max-width: 768px) {
   .contact .container {
-    height: 110vh;
+    height: 100vh;
   }
 
   .contact-box {
@@ -625,8 +626,6 @@ body {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin-top: 20vh;
-  position: absolute;
 }
 
 @media (max-width: 768px) {
@@ -642,6 +641,7 @@ body {
 @media (max-width: 425px) {
     .contact-social{
     width: 300px;
+    }
 }
 
 .contact-social a {
@@ -683,12 +683,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .contact-development {
-    margin: 20px auto 0 auto;
-  }
-}
-
-@media (max-width: 425px) {
   .contact-development {
     margin: 20px auto 0 0;
   }
