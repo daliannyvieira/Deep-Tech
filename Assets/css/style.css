@@ -536,14 +536,12 @@ body {
     width: 260px;
   }
 
-
   .box-startupin-img,
   .box-social-img,
   .box-bios-img,
   .box-cloud-img {
     width: 100%
   }
-
 }
 
 /*  Contact  */
@@ -585,16 +583,12 @@ body {
 .contact-box {
   position: relative;
   width: 50%;
-  padding-top: 50px;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
   .contact .container {
     height: 100vh;
-  }
-
-  .contact-box {
-    margin: 0 auto;
   }
 
   .contact-description {
@@ -604,7 +598,7 @@ body {
 
 @media (max-width: 425px) {
   .contact-box {
-    width: 100%;
+    width: auto;
   }
 }
 
@@ -638,11 +632,25 @@ body {
   margin: 5px 0;
 }
 
+@media (max-width: 425px) {
+  .contact-description-text {
+    font-size: 1.75rem;
+    line-height: 46px;
+  }
+
+  .contact-address-text {
+    font-size: 1.125rem;
+    line-height: 34px;
+  }
+
+}
+
 .contact-social {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin-left: -70px;
+  margin-left: -60px;
+  margin-bottom: 5vh;
 }
 
 @media (max-width: 768px) {
@@ -658,6 +666,7 @@ body {
 @media (max-width: 425px) {
     .contact-social{
     width: 300px;
+    margin-bottom: 0;
     }
 }
 
