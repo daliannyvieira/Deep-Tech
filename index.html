@@ -18,12 +18,19 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="Assets/css/style.css">
   <link rel="stylesheet" href="Assets/css/fonts.css">
+  <link rel="stylesheet" href="Assets/css/glitch.css">
+  <link rel="stylesheet" href="Assets/css/belief.css">
 </head>
-<body>
+
+<body class="demo-2 render">
+
   <header class="header">
     <section class="header-container">
-      <img src="Assets/img/1STi-Transformacao.svg" alt="Logo 1STi" class="header-img">
+      <div class="header-logobox">
+        <img src="Assets/img/1STi-Transformacao.svg" alt="Logo 1STi" class="header-img">
+      </div>
       <nav class="menu">
+        <img src="Assets/img/Mobile-Icon-Menu.png" class="menu-icon-mobile" alt="Icone Menu">
         <ul class="menu-list">
           <a href="#belief">
             <li class="menu-item">Belief</li>
@@ -54,22 +61,34 @@
   </header>
   <main>
     <section class="home" id="home">
-        <div class="home-column">
-          <div class="home-center">
-            <img src="Assets/img/Borboleta.png" class="home-img">
-          </div>
-          <div class="home-description">
-            <h1 class="home-title">Deep<br>Tech</h1>
-            <p class="home-text">A significant driving force<br>for the future innovation economy.</p>
-            <span class="home-span">↓</span>
-          </div>
+      <div class="home-column">
+        <div class="home-center">
+          <img src="Assets/img/Borboleta.png" class="home-img borboleta">
+          <img src="Assets/img/case-robo.jpg" class="home-img borboleto">
+        </div>
+        <div class="home-description">
+          <h1 class="home-title">Deep<br>Tech</h1>
+          <p class="home-text">A significant driving force<br>for the future innovation economy.</p>
+          <span class="home-span">↓</span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="glitch">
+          <div class="glitch__img"></div>
+          <div class="glitch__img"></div>
+          <div class="glitch__img"></div>
+          <div class="glitch__img"></div>
+          <div class="glitch__img"></div>
         </div>
       </div>
     </section>
     <section class="belief" id="belief">
       <div class="container">
         <span class="belief-span">—<br>belief</span>
-        <h2 class="belief-title">Shaping our future for better</h2>
+        <div class="belief-intro">
+          <canvas class="scene scene--full" id="scene"></canvas>
+          <h2 class="belief-title">Shaping our future for better</h2>
+        </div>
         <div class="belief-description">
           <p class="belief-text">In a time marked by the greatest environmental, economic and social challenges of our history, the surface is not the place.</p>
           <p class="belief-text">We must dive deep in order to find the strength that allows us to create intentional and urgent trajectories that generate the necessary conditions for a new way of evolving to organizations, markets and society.</p>
@@ -103,15 +122,15 @@
         <div class="services-column1">
           <p class="services-text">This portfolio was designed to function independently, but their combinations are powerful.</p>
           <div class="services-box box-startupin">
-            <span>
-              <h3 class="services-box-subtitle box-startupin-subtitle">StartupIN</h3>
+            <span class="box-startupin-subtitle">
+              <h3 class="services-box-subtitle">StartupIN</h3>
             </span>
             <p class="services-box-text box-startupin-text">Audácia e velocidade das startups em forma de inovação corporativa.  </p>
             <img src="Assets/img/startupin.jpg" alt="StartupIN" class="services-box-img box-startupin-img">
           </div>
           <div class="services-box box-social">
-            <span>
-              <h3 class="services-box-subtitle box-social-subtitle">Social innovation</h3>
+            <span class="box-social-subtitle">
+              <h3 class="services-box-subtitle">Social<br>innovation</h3>
             </span>
             <p class="services-box-text box-social-text">É a próxima onda de Inovação aberta, reversa, negócios sociais, valor compartilhado.</p>
             <img src="Assets/img/social.jpg" alt="Social " class="services-box-img box-social-img">
@@ -119,15 +138,15 @@
         </div>
         <div class="services-column2">
           <div class="services-box box-bios">
-            <span>
-              <h3 class="services-box-subtitle box-bios-subtitle">Bios+Techné</h3>
+            <span class="box-bios-subtitle">
+              <h3 class="services-box-subtitle ">Bios+Techné</h3>
             </span>
             <p class="services-box-text box-bios-text">Inteligência humana e artificial trabalhando juntas para exponencializar impactos/resultados positivos.</p>
             <img src="Assets/img/biostechne.jpg" alt="Biostechne" class="services-box-img box-bios-img">
           </div>          
           <div class="services-box box-cloud">
-            <span>
-              <h3 class="services-box-subtitle  box-cloud-subtitle">Cloud agility</h3>
+            <span class="box-cloud-subtitle">
+              <h3 class="services-box-subtitle">Cloud agility</h3>
             </span>
             <p class="services-box-text box-cloud-text">Rápido, escalável e disruptivo. Estruturas leves, flexíveis e robustas para sustentar qualquer desafio.</p>
             <img src="Assets/img/cloud.jpg" alt="Cloud" class="services-box-img box-cloud-img">
@@ -146,20 +165,24 @@
           <p class="contact-address-text">ola@1sti.com.br</p>
           <p class="contact-address-text">Rio • São Paulo • Lisboa</p>
         </div>
+      </div>
         <div class="contact-social">
           <a href="https://web.facebook.com/ola1STi/" target="_blank">
-            <p class="contact-social-text">Facebook</p> 
-          </a>
+            <p class="contact-social-text">Facebook</p></a>
           <a href="https://medium.com/1sti" target="_blank">
-            <p class="contact-social-text">Medium</p>
-          </a>
+            <p class="contact-social-text">Medium</p></a>
           <a href="https://www.linkedin.com/company/1sti" target="_blank">
-            <p class="contact-social-text">LinkedIn</p> 
-          </a>
-          <p class="contact-development">developed by      <a href="" class="contact-development-link" target="_blank"> Estúdio Vai na Web</a></p>
+            <p class="contact-social-text">LinkedIn</p></a>
+          <p class="contact-development">developed by <a href="" class="contact-development-link" target="_blank">Estúdio Vai na Web</a></p>
         </div>
-      </div>
     </section>
   </footer>
+  <script src="Assets/js/imagesloaded.pkgd.min.js"></script>
+  <script src="Assets/js/glitch.js"></script>
+  <script src="Assets/js/three.min.js"></script>
+  <script src="Assets/js/perlin.js"></script>
+  <script src="Assets/js/TweenMax.min.js"></script>
+  <script src="Assets/js/belief.js"></script>
+  <script src="Assets/js/main.js"></script>
 </body>
 </html>
