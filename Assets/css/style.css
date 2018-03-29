@@ -148,7 +148,7 @@ body {
 
 @media (max-width: 768px) {
   .home {
-    display: flex;
+    background-position: initial;
     flex-direction: column;
     padding-top: 50vh;
   }
@@ -187,6 +187,7 @@ body {
 @media (max-width: 768px) {
   .home-center {
     top: 0;
+    height: 90vh;
   }
 }
 
@@ -696,6 +697,13 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .contact-social-text {
+    padding: 6px;
+    box-shadow: 6px 0 0 0 rgb(255, 221, 0), -6px 0 0 0 rgb(255, 221, 0);
+  }
+}
+
 .contact-development {
   font-family: SkyhookMonoBold;
   font-size: .75rem;
@@ -711,5 +719,15 @@ body {
 @media (max-width: 768px) {
   .contact-development {
     margin: 20px auto 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-development {
+    font-family: SkyhookMonoBold;
+    font-size: .75rem;
+    box-shadow: 6px 0 0 0 white, -6px 0 0 0 white;
+    background-color: white;
+    padding: 5px 0;
   }
 }
