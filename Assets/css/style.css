@@ -479,7 +479,7 @@ body {
 
 .box-startupin-subtitle {
   align-self: flex-end;
-  margin-right: 50px;
+  margin-right: 60px;
 } 
 
 .box-startupin-text,
@@ -494,6 +494,10 @@ body {
 .box-social {
   align-items: flex-end;
   margin-right: 50px;
+}
+
+.box-social-subtitle {
+  margin-right: 30px;
 }
 
 .box-bios,
