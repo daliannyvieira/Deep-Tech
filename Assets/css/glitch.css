@@ -43,19 +43,19 @@
 	animation-name: borboleto-anim-toggle;
 }
 @keyframes borboleta-anim-toggle {
-	0%, 50% { 
+	0%, 30%, 50%, 72% { 
 		opacity: 0; 
 	}
-	55%, 70% {
+	35%, 55%, 70%, 75% {
 		opacity: 1;
 	}
 }
 
 @keyframes borboleto-anim-toggle {
-	0%, 50% { 
+	0%, 30%, 50%, 72% { 
 		opacity: 1; 
 	}
-	65%, 90% {
+	35%, 65%, 90%, 75% {
 		opacity: 0;
 	}
 }
