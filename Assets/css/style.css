@@ -11,15 +11,6 @@ body {
   font-size: 16px;
 }
 
-/*.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 40px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}*/
-
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -45,6 +36,16 @@ body {
   min-width: 90vw;
   position: relative;
   z-index: 35;
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 @media (max-width: 768px) {
@@ -353,9 +354,22 @@ body {
   width: 80vw;
 }
 
+@media (max-width: 768px) {
+  .cases-box {
+    flex-direction: column;
+  }
+}
+
 .cases-item {
   width: 20vw;
 }
+
+@media (max-width: 768px) {
+  .cases-item {
+    width: 80vw;
+  }
+}
+
 
 .cases-img {
   width: 100%;
