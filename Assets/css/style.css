@@ -193,6 +193,7 @@ body {
 .home-img {
   width: 420px;
   transform: rotate(-5deg);
+  position: absolute;
 }
 
 @media (max-width: 768px) {
